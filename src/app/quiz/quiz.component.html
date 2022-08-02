@@ -1,9 +1,11 @@
 <div class="container my-4">
-    <div class="row gap-2">
-        <a [routerLink]="['singlequiz']" class="list-group-item " >
-            <div class="col-md-4 shadow p-3 rounded">
-                <p class="fw-bold">Quiz Title</p>
-            </div>
-        </a>
+  <div class="row gap-2">
+    <div class="col-md-3" *ngFor="let item of title">
+    <div class="shadow p-3 my-2 rounded" >
+      <a [routerLink]="['singlequiz',item._id]" class="list-group-item">
+        <p class="fw-bold">{{item.title}}</p>
+      </a>
     </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="d-flex align-items-center" style="height: 20vh">
+      <div class="col-md-6 alert mx-auto alert-primary">
+        <h2 class="text-center text-dark">Your Score is: {{result}} out of {{questions.length}}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row gap-2">
+    <div class="col-md-6 mx-auto" *ngFor="let item of questions">
+    <div class="shadow p-3 my-2 rounded" >
+        <p class="fw-bold">{{item.question}}</p>
+        <p >Answer: <span class="text-success fw-bold">{{item.correctAnswer}}</span> </p>
+    </div>
+    </div>
+  </div>
+
+</div>

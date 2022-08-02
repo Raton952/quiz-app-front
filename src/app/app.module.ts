@@ -17,6 +17,7 @@ import { MyQuizComponent } from './quiz/my-quiz/my-quiz.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddQuizTitleComponent } from './quiz/add-quiz-title/add-quiz-title.component';
+import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AddQuizTitleComponent } from './quiz/add-quiz-title/add-quiz-title.comp
     EditQuizComponent,
     MyQuizComponent,
     AddQuizTitleComponent,
+    QuizResultComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

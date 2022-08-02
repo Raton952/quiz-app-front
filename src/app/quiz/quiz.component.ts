@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuizService } from './quiz.service';
 
 @Component({
   selector: 'app-quiz',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
 
-  constructor() { }
+  constructor(private quizService: QuizService) {}
+
+  title:any[] = [];
 
   ngOnInit(): void {
+    this.quizService.getAllTitle().subscribe((res:any) => {
+      
+      this.title = res.titles
+    });
   }
 
 }

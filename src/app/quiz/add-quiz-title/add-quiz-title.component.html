@@ -25,7 +25,7 @@
   <div class="row">
     <div class="col-md-3" *ngFor="let a of title">
     <div class="shadow rounded p-3 me-2 my-2">
-      <a [routerLink]="['addquestion']" class="list-group-item">
+      <a [routerLink]="['addquestion',a._id]" class="list-group-item">
         <p class="fw-bold">{{ a.title }}</p>
       </a>
     </div>
