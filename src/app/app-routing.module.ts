@@ -16,6 +16,7 @@ const routes: Routes = [
   {path:"home", component: QuizComponent},
   {path:"result/:id",canActivate:[AuthGuard], component: QuizResultComponent},
   {path:"myquiz",canActivate:[AuthGuard], component: MyQuizComponent},
+  {path:"home/singlequiz/:id",canActivate:[AuthGuard], component: SingleQuizComponent},
   {path:"singlequiz/:id",canActivate:[AuthGuard], component: SingleQuizComponent},
   {path:"addquiz",canActivate:[AuthGuard], component: AddQuizTitleComponent},
   {path:"addquiz/addquestion/:id",canActivate:[AuthGuard], component: AddQuizComponent},
