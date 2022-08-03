@@ -12,7 +12,8 @@ import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 
 const routes: Routes = [
-  {path:"", component: QuizComponent},
+  {path:"",  pathMatch: 'full', component: QuizComponent},
+  {path:"home", component: QuizComponent},
   {path:"result/:id",canActivate:[AuthGuard], component: QuizResultComponent},
   {path:"myquiz",canActivate:[AuthGuard], component: MyQuizComponent},
   {path:"singlequiz/:id",canActivate:[AuthGuard], component: SingleQuizComponent},

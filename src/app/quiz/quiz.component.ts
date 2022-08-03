@@ -13,6 +13,7 @@ export class QuizComponent implements OnInit {
   title:any[] = [];
 
   ngOnInit(): void {
+    
     this.quizService.getAllTitle().subscribe((res:any) => {
       
       this.title = res.titles
